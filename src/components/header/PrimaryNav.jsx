@@ -4,13 +4,15 @@ function PrimaryNav() {
   return (
     <nav className={styles.primaryNav}>
       <span>Wishlist</span>
-      <h1>
-        <Link to="/">
+      <p>
+        <Link to="/" className={styles.logo}>
           Weekender <br /> London
         </Link>
-      </h1>
-      <span>Sign In</span>
-      <span>Basket</span>
+      </p>
+      <div>
+        <span>Sign In</span>
+        <span>Basket</span>
+      </div>
     </nav>
   );
 }

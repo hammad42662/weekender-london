@@ -1,0 +1,15 @@
+.secondaryNav {
+  background-color: #c755c3;
+  margin: 0px;
+}
+.secondaryNav ul {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.secondaryNav ul li {
+  list-style: none;
+}
+.listItems {
+  text-decoration: none;
+}

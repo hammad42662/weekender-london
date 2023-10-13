@@ -1,19 +1,22 @@
 import { Link } from "react-router-dom";
-
+import styles from "./SecondaryNav.module.css";
 function SecondaryNav() {
   return (
-    <nav>
-      <ul className="flex flex-col sm:flex-row justify-between items-center">
+    <div className={styles.secondaryNav}>
+      <ul>
         <li>
-          <Link to="/menbags">Men Bags</Link>
+          <Link to="/menbags" className={styles.listItems}>
+            Men Bags
+          </Link>
         </li>
         <li>
-          {" "}
-          <Link to="/womenbags">Women Bags</Link>
+          <Link to="/womenbags" className={styles.listItems}>
+            Women Bags
+          </Link>
         </li>
         <li> Accessories</li>
       </ul>
-    </nav>
+    </div>
   );
 }
 export default SecondaryNav;
