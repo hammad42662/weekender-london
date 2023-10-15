@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./SecondaryNav.module.css";
 function SecondaryNav() {
   return (
-    <div className={styles.secondaryNav}>
+    <nav className={styles.secondaryNav}>
       <ul>
         <li>
           <Link to="/menbags" className={styles.listItems}>
@@ -14,9 +14,13 @@ function SecondaryNav() {
             Women Bags
           </Link>
         </li>
-        <li> Accessories</li>
+        <li>
+          <Link to="/accessories" className={styles.listItems}>
+            Accessories
+          </Link>
+        </li>
       </ul>
-    </div>
+    </nav>
   );
 }
 export default SecondaryNav;

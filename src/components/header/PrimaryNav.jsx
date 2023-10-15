@@ -3,16 +3,22 @@ import styles from "./PrimaryNav.module.css";
 function PrimaryNav() {
   return (
     <nav className={styles.primaryNav}>
-      <span>Wishlist</span>
-      <p>
-        <Link to="/" className={styles.logo}>
-          Weekender <br /> London
-        </Link>
-      </p>
-      <div>
-        <span>Sign In</span>
-        <span>Basket</span>
-      </div>
+      <ul>
+        <li>
+          <label htmlFor="seacrhbar">
+            <span>🔎</span>
+          </label>
+          <input type="search" id="searchbar" name="seacrhbar" />
+        </li>
+        <li>
+          <Link to="/" className={styles.logo}>
+            Weekender London
+          </Link>
+        </li>
+        <li>Wishlist</li>
+        <li>Sign In</li>
+        <li>Basket</li>
+      </ul>
     </nav>
   );
 }
