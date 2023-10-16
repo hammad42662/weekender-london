@@ -1,0 +1,10 @@
+.hero {
+  display: block;
+  /* background-color: black; */
+}
+.bgImage {
+  object-fit: cover;
+  margin: 0em 0em 0em 14em;
+  width: 70%;
+  height: auto;
+}

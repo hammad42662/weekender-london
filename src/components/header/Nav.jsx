@@ -3,10 +3,10 @@ import SecondaryNav from "./SecondaryNav";
 import styles from "./Nav.module.css";
 function Nav() {
   return (
-    <div className={styles.nav}>
+    <header className={styles.nav}>
       <PrimaryNav />
       <SecondaryNav />
-    </div>
+    </header>
   );
 }
 export default Nav;

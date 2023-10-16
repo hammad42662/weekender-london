@@ -1,4 +1,12 @@
+import Nav from "../components/header/Nav";
+import HeroSection from "../components/hero-section/HeroSection";
+
 function Home() {
-  return;
+  return (
+    <>
+      <Nav />
+      <HeroSection />
+    </>
+  );
 }
 export default Home;
