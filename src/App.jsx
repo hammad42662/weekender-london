@@ -4,6 +4,7 @@ import MenBags from "./pages/MenBags";
 import WomenBags from "./pages/WomenBags";
 import Accessories from "./pages/Accessories";
 import PageNotFound from "./pages/PageNotFound";
+
 function App() {
   return (
     <>

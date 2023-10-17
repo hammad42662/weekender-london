@@ -1,0 +1,27 @@
+main {
+  margin: var(--global-margin);
+  margin-top: 10em;
+}
+main h1 {
+  margin-left: 1.4em;
+}
+.categoriesList {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 90px;
+  list-style: none;
+}
+.categoriesList li {
+  /* background-color: brown;
+  border: 10px solid black; */
+}
+.categoriesList li img {
+  width: 100%;
+  height: 0%;
+}
+.categoriesList li p,
+button {
+  color: rgb(0, 0, 0);
+  font-weight: bolder;
+}

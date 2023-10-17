@@ -1,4 +1,5 @@
 import styles from "./HeroBackground.module.css";
+
 function HeroBackground() {
   return (
     <section className={styles.hero}>
