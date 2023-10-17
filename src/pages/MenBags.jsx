@@ -1,4 +1,6 @@
+import Nav from "../components/header/Nav";
+
 function MenBags() {
-  return <h1>Men Bags</h1>;
+  return <Nav />;
 }
 export default MenBags;
