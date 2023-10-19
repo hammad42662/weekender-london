@@ -1,13 +1,20 @@
 .testimonialsContainer {
   display: flex;
   margin-top: 10rem;
+  gap: 10px;
 }
 
 .testimonial {
-  background-color: blue;
+  background-color: rgb(17, 17, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  padding: 30px;
 }
 .testimonial img {
-  width: 15%;
+  width: 30%;
   border-radius: 30px;
   border: 2px solid rgba(249, 0, 0, 0.804);
   height: auto;
