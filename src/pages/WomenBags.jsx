@@ -1,4 +1,11 @@
+import Nav from "../components/header/Nav";
+
 function WomenBags() {
-  return <h1>Women Bags</h1>;
+  return (
+    <>
+      <Nav />
+      <h1>Women Bags</h1>
+    </>
+  );
 }
 export default WomenBags;

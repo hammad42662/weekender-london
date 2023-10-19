@@ -10,10 +10,10 @@ function HeroCTA() {
   return (
     <div className={styles.cta}>
       <h1>Weekender London</h1>
-      <p>Leather bags for the modern world</p>
+      <p>Bags for the modern world</p>
       <p>
-        Shop our collection of stylish and durable leather bags, perfect for
-        work, travel, and everyday use.
+        Shop our collection of stylish and durable bags, perfect for work,
+        travel, and everyday use.
       </p>
       <Button onClick={handleClick} color="red">
         Shop Now

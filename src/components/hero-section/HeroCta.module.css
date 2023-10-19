@@ -3,13 +3,13 @@
   position: absolute;
   top: 70%;
   left: 10%;
-  color: rgba(245, 215, 215, 0.8);
+  color: rgba(0, 0, 0, 0.8);
   font-family: "Dosis", sans-serif;
   font-size: 1.6rem;
 }
 @keyframes slide-in {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(-10%);
   }
   100% {
     transform: translateX(0);
@@ -17,5 +17,5 @@
 }
 
 .cta {
-  animation: slide-in 3s linear;
+  animation: slide-in 1s linear;
 }

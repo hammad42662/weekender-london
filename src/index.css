@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 :root {
-  --global-margin: 0px 100px 0px 100px;
+  --global-margin: 0px 150px 0px 150px;
 }
 body {
-  font-family: "Poppins", sans-serif;
   margin: 0px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Poppins", sans-serif;
+  display: block;
 }

@@ -1,13 +1,11 @@
 main {
-  margin: var(--global-margin);
-  margin-top: 10em;
+  margin: 100px 0px 0px 100px;
 }
 main h1 {
-  margin-left: 1.4em;
+  margin-bottom: 50px;
 }
 .categoriesList {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   gap: 90px;
   list-style: none;
@@ -17,11 +15,16 @@ main h1 {
   border: 10px solid black; */
 }
 .categoriesList li img {
-  width: 100%;
-  height: 0%;
+  width: 50%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
 }
-.categoriesList li p,
-button {
-  color: rgb(0, 0, 0);
+.categoriesList li img:hover {
+  transform: scale(1.1);
+}
+.categoriesContent {
+  margin-left: 2em;
+
   font-weight: bolder;
+  align-self: baseline;
 }

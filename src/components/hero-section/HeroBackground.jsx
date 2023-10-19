@@ -5,7 +5,7 @@ function HeroBackground() {
     <section className={styles.hero}>
       <picture>
         <img
-          src="../public/images/men-slider-image.jpg"
+          src="../public/images/hero-image.jpg"
           alt="hero-image"
           className={styles.bgImage}
         />

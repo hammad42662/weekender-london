@@ -1,0 +1,38 @@
+.offerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 150px 100px 150px;
+}
+.offerMain div {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.poster img {
+  width: 80%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 50px;
+}
+.poster img:hover {
+  transform: scale(1.2);
+}
+.posterButton {
+  position: absolute;
+  top: 73%;
+  left: 25%;
+  padding: 17px 25px 17px 25px;
+  background-color: #f77c43;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border: 1px solid rgb(0, 0, 0);
+}
+.posterButton:hover {
+  cursor: pointer;
+}

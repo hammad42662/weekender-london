@@ -1,4 +1,11 @@
+import Nav from "../components/header/Nav";
+
 function Accessories() {
-  return <h1>Accessories Page</h1>;
+  return (
+    <>
+      <Nav />
+      <h1>Accessories Page</h1>
+    </>
+  );
 }
 export default Accessories;

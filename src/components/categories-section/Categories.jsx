@@ -25,14 +25,16 @@ function Categories() {
         {categories.map((category) => (
           <li key={category.id}>
             <img src={category.path} alt="categories image" />
-            <p>{category.names}</p>
-            <Button>
-              {category.id === 11
-                ? "Shop Men"
-                : category.id === 22
-                ? "Shop Women"
-                : "Shop Accessories"}
-            </Button>
+            <div className={styles.categoriesContent}>
+              <p>{category.names}</p>
+              <Button>
+                {category.id === 11
+                  ? "Shop Men"
+                  : category.id === 22
+                  ? "Shop Women"
+                  : "Shop Accessories"}
+              </Button>
+            </div>
           </li>
         ))}
       </ul>
