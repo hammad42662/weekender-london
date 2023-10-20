@@ -1,0 +1,7 @@
+.cardContainer {
+  list-style: none;
+  display: flex;
+}
+.cardContainer img {
+  width: 15%;
+}
