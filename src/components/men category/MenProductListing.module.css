@@ -1,7 +1,28 @@
 .cardContainer {
   list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: var(--global-margin);
 }
-.cardContainer img {
-  width: 15%;
+.card {
 }
+.card img {
+  width: 90%;
+  border-radius: 10px;
+}
+.arrowRight,
+.arrowLeft {
+  position: relative;
+  bottom: 50%;
+}
+/* .arrowRight {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-right: 10px;
+}
+.arrowLeft {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+} */
