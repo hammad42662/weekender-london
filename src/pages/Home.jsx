@@ -2,7 +2,7 @@ import Categories from "../components/categories-section/categories";
 import Footer from "../components/footer/footer";
 import Nav from "../components/header/Nav";
 import HeroSection from "../components/hero-section/hero-section";
-import Offers from "../offers poster/offers";
+import Offers from "../components/offers poster/Offers";
 import Testimonials from "../testimonials/testimonials";
 
 function Home() {

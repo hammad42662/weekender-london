@@ -1,4 +1,3 @@
-import Button from "../components/Reusable Components/Button";
 import styles from "./offers.module.css";
 function Offers() {
   return (

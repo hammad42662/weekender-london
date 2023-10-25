@@ -6,6 +6,7 @@
   height: 100px;
   margin: 0px;
   font-family: "Young Serif";
+  z-index: 1;
 }
 .primaryNav ul {
   display: flex;
