@@ -1,16 +1,31 @@
 .cartContainer {
-  display: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  left: 0;
+  left: 70%;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 30%; /* Full width */
+  height: auto; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgb(254, 254, 254); /* Fallback color */
+  background-color: rgb(255, 255, 255); /* Black w/ opacity */
+}
+.cartContainer img {
+  width: 20%;
+  height: auto;
+}
+.basketBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0, 0.8);
+  transition: 0.4s cubic-bezier(0.5, 0.9, 1, 0.1);
+}
+.basketBtn:hover {
+  cursor: pointer;
+  transform: scale(1.4, 1.4);
 }
 .button {
-  background-color: red;
-  padding: 40px;
+  background-color: rgb(145, 71, 71);
+  padding: 10px;
 }
