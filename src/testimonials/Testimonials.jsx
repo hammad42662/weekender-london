@@ -1,4 +1,8 @@
 import styles from "./testimonials.module.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/pagination";
 const reviewer = [
   {
     image: "../public/images/avatar/avatar1.jpg",
@@ -12,7 +16,7 @@ const reviewer = [
     image: "../public/images/avatar/avatar2.jpg",
     name: "Olivia Smith",
     review:
-      "'ve ordered several bags from this website and I've always been happy with the quality of the products and the service. The website is easy to use and the shipping is always fast and free. I highly recommend this website to anyone looking for a new bag.",
+      "I've ordered several bags from this website and I've always been happy with the quality of the products and the service. The website is easy to use and the shipping is always fast and free. I highly recommend this website to anyone looking for a new bag.",
     id: 2,
     rating: "⭐⭐⭐⭐⭐",
   },
@@ -42,18 +46,60 @@ const reviewer = [
   },
 ];
 
+// function Testimonials() {
+//   return (
+//     <>
+//       <section className={styles.testimonialsContainer}>
+//         {reviewer.map((review) => (
+//           <article key={review.id} className={styles.testimonial}>
+//             <img src={review.image} alt="review image" />
+//             <span>{review.rating}</span>
+//             <h3>{review.name}</h3>
+//             <p>"{review.review}"</p>
+//           </article>
+//         ))}
+//         <button className={styles.leftBtn}>&larr;</button>
+//         <button className={styles.rightBtn}>&rarr;</button>
+//       </section>
+//       <Dots />
+//     </>
+//   );
+// }
+// function Dots() {
+//   return (
+//     <div className={styles.dotDiv}>
+//       <span className={styles.dot}></span>
+//       <span className={styles.dot}></span>
+//       <span className={styles.dot}></span>
+//       <span className={styles.dot}></span>
+//       <span className={styles.dot}></span>
+//     </div>
+//   );
+// }
 function Testimonials() {
   return (
-    <section className={styles.testimonialsContainer}>
-      {reviewer.map((review) => (
-        <article key={review.id} className={styles.testimonial}>
-          <img src={review.image} alt="review image" />
-          <span>{review.rating}</span>
-          <h3>{review.name}</h3>
-          <p>"{review.review}"</p>
-        </article>
-      ))}
-    </section>
+    <>
+      <Swiper
+        slidesPerView={2}
+        spaceBetween={30}
+        pagination={{
+          clickable: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        {reviewer.map((review) => (
+          <SwiperSlide key={review.id}>
+            <li className={styles.testimonial}>
+              <img src={review.image} />
+              <span>{review.rating}</span>
+              <p>{review.review}</p>
+              <h2>{review.name}</h2>
+            </li>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 }
 export default Testimonials;
