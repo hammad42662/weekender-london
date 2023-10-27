@@ -1,6 +1,5 @@
 import Nav from "../components/header/Nav";
-import MenProductListing from "../components/men category/MenProductListing";
-
+import MenProductListing from "../components/menCategory/MenProductListing";
 function MenBags() {
   return (
     <>

@@ -1,4 +1,4 @@
-import Categories from "../components/categories-section/categories";
+import Categories from "../components/categories-section/Categories";
 import Footer from "../components/footer/footer";
 import Nav from "../components/header/Nav";
 import HeroSection from "../components/hero-section/hero-section";

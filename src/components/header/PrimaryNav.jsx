@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./PrimaryNav.module.css";
 import Cart from "../cart/Cart";
 function PrimaryNav() {
@@ -6,15 +6,9 @@ function PrimaryNav() {
     <nav className={styles.primaryNav}>
       <ul>
         <li>
-          <label htmlFor="seacrhbar">
-            <span>🔎</span>
-          </label>
-          <input type="search" id="searchbar" name="seacrhbar" />
-        </li>
-        <li>
-          <Link to="/" className={styles.logo}>
+          <NavLink to="/" as={NavLink} className={styles.logo}>
             Weekender London
-          </Link>
+          </NavLink>
         </li>
         <li>Wishlist</li>
         <li>Sign In</li>

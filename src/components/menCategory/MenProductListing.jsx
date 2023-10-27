@@ -5,20 +5,15 @@ const Images = [
   "../public/images/menbags/his-carry-all-front.jpg",
 ];
 import styles from "./MenProductListing.module.css";
-import MenBags from "./MenBagsObject";
 import Heading from "./Heading";
-import { useState } from "react";
-function MenProductListing() {
-  const [cartItems, setCartItems] = useState([]);
-  function handleCartItems(item) {
-    setCartItems([...cartItems, item]);
-    console.log("add to cart");
-  }
+import MenBagsObj from "./MenBagsObject";
+
+function MenProductListing({ cartItems, handleCartItems }) {
   return (
     <>
       <Heading />
       <ul className={styles.cardContainer}>
-        {MenBags.map((bag) => (
+        {MenBagsObj.map((bag) => (
           <li key={bag.id} className={styles.card}>
             <img src={bag.image1} alt="bag image" className={styles.mainImg} />
 

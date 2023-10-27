@@ -1,5 +1,6 @@
 import Button from "../Reusable Components/Button";
 import styles from "./Categories.module.css";
+import { Link } from "react-router-dom";
 const categories = [
   {
     id: 11,
@@ -27,13 +28,23 @@ function Categories() {
             <img src={category.path} alt="categories image" />
             <div className={styles.categoriesContent}>
               <p>{category.names}</p>
-              <Button>
-                {category.id === 11
-                  ? "Shop Men"
-                  : category.id === 22
-                  ? "Shop Women"
-                  : "Shop Accessories"}
-              </Button>
+              <Link
+                to={
+                  category.id === 11
+                    ? "/menbags"
+                    : category.id === 22
+                    ? "/womenbags"
+                    : "/accessories"
+                }
+              >
+                <Button>
+                  {category.id === 11
+                    ? "Shop Men's Bags"
+                    : category.id === 22
+                    ? "Shop Women's Bags"
+                    : "Shop Accessories"}
+                </Button>
+              </Link>
             </div>
           </li>
         ))}

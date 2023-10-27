@@ -1,23 +1,23 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styles from "./SecondaryNav.module.css";
 function SecondaryNav() {
   return (
     <nav className={styles.secondaryNav}>
       <ul>
         <li>
-          <Link to="/menbags" className={styles.listItems}>
-            Men Bags
-          </Link>
+          <NavLink to="/menbags" as={NavLink} className={styles.listItems}>
+            Men's Bags
+          </NavLink>
         </li>
         <li>
-          <Link to="/womenbags" className={styles.listItems}>
-            Women Bags
-          </Link>
+          <NavLink to="/womenbags" as={NavLink} className={styles.listItems}>
+            Women's Bags
+          </NavLink>
         </li>
         <li>
-          <Link to="/accessories" className={styles.listItems}>
+          <NavLink to="/accessories" as={NavLink} className={styles.listItems}>
             Accessories
-          </Link>
+          </NavLink>
         </li>
       </ul>
     </nav>
