@@ -1,8 +1,9 @@
 import styles from "./testimonials.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { EffectCoverflow, Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/effect-coverflow";
 const reviewer = [
   {
     image: "../public/images/avatar/avatar1.jpg",
@@ -80,12 +81,22 @@ function Testimonials() {
   return (
     <>
       <Swiper
-        slidesPerView={2}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
         }}
-        modules={[Pagination]}
+        pagination={true}
+        keyboard={{
+          enabled: true,
+        }}
+        modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
         {reviewer.map((review) => (
