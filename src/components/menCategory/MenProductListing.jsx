@@ -5,13 +5,13 @@ const Images = [
   "../public/images/menbags/his-carry-all-front.jpg",
 ];
 import styles from "./MenProductListing.module.css";
-import Heading from "./Heading";
+import MenHeading from "./MenHeading";
 import MenBagsObj from "./MenBagsObject";
 
 function MenProductListing({ cartItems, handleCartItems }) {
   return (
     <>
-      <Heading />
+      <MenHeading />
       <ul className={styles.cardContainer}>
         {MenBagsObj.map((bag) => (
           <li key={bag.id} className={styles.card}>

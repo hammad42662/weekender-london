@@ -1,4 +1,4 @@
-import Button from "../Reusable Components/Button";
+import Button from "../ReusableComponents/Button";
 import styles from "./Categories.module.css";
 import { Link } from "react-router-dom";
 const categories = [

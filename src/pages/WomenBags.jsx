@@ -1,10 +1,11 @@
 import Nav from "../components/header/Nav";
+import WomensHeading from "../components/womenCategory/WomensHeading";
 
 function WomenBags() {
   return (
     <>
       <Nav />
-      <h1>Women Bags</h1>
+      <WomensHeading />
     </>
   );
 }

@@ -1,5 +1,5 @@
 import { redirect, useNavigate } from "react-router-dom";
-import Button from "../Reusable Components/Button";
+import Button from "../ReusableComponents/Button";
 import styles from "./HeroCTA.module.css";
 function HeroCTA() {
   const navigate = useNavigate();

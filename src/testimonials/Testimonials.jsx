@@ -4,6 +4,8 @@ import { EffectCoverflow, Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
+import "boxicons";
+
 const reviewer = [
   {
     image: "../public/images/avatar/avatar1.jpg",
@@ -47,36 +49,6 @@ const reviewer = [
   },
 ];
 
-// function Testimonials() {
-//   return (
-//     <>
-//       <section className={styles.testimonialsContainer}>
-//         {reviewer.map((review) => (
-//           <article key={review.id} className={styles.testimonial}>
-//             <img src={review.image} alt="review image" />
-//             <span>{review.rating}</span>
-//             <h3>{review.name}</h3>
-//             <p>"{review.review}"</p>
-//           </article>
-//         ))}
-//         <button className={styles.leftBtn}>&larr;</button>
-//         <button className={styles.rightBtn}>&rarr;</button>
-//       </section>
-//       <Dots />
-//     </>
-//   );
-// }
-// function Dots() {
-//   return (
-//     <div className={styles.dotDiv}>
-//       <span className={styles.dot}></span>
-//       <span className={styles.dot}></span>
-//       <span className={styles.dot}></span>
-//       <span className={styles.dot}></span>
-//       <span className={styles.dot}></span>
-//     </div>
-//   );
-// }
 function Testimonials() {
   return (
     <>
@@ -84,10 +56,10 @@ function Testimonials() {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={"auto"}
+        slidesPerView={"3"}
         coverflowEffect={{
           rotate: 50,
-          stretch: 0,
+          stretch: 5,
           depth: 100,
           modifier: 1,
           slideShadows: true,
@@ -105,6 +77,12 @@ function Testimonials() {
               <img src={review.image} />
               <span>{review.rating}</span>
               <p>{review.review}</p>
+              <box-icon
+                type="solid"
+                name="quote-alt-left"
+                color="red"
+                animation="fade-right"
+              ></box-icon>
               <h2>{review.name}</h2>
             </li>
           </SwiperSlide>
@@ -113,4 +91,5 @@ function Testimonials() {
     </>
   );
 }
+
 export default Testimonials;
