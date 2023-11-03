@@ -4,7 +4,7 @@ import { EffectCoverflow, Pagination, Keyboard } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
-import "boxicons";
+import { BiSolidQuoteLeft } from "react-icons/bi";
 
 const reviewer = [
   {
@@ -77,12 +77,8 @@ function Testimonials() {
               <img src={review.image} />
               <span>{review.rating}</span>
               <p>{review.review}</p>
-              <box-icon
-                type="solid"
-                name="quote-alt-left"
-                color="red"
-                animation="fade-right"
-              ></box-icon>
+
+              <BiSolidQuoteLeft color="darkred" size="1.8rem" />
               <h2>{review.name}</h2>
             </li>
           </SwiperSlide>

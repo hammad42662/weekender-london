@@ -1,8 +1,13 @@
-import { useState } from "react";
+import { useReducer, useState } from "react";
 import styles from "./Cart.module.css";
 import MenBagsObj from "../menCategory/MenBagsObject";
-
+import { Link } from "react-router-dom";
+import { BiCart } from "react-icons/bi";
+function reducer(state, action) {
+  console.log(state, action);
+}
 function Cart() {
+  const [count, dispatch] = useReducer(reducer, 0);
   const [open, setOpen] = useState(false);
   function handleToggleModal() {
     setOpen(!open);
@@ -10,11 +15,13 @@ function Cart() {
   }
   function handleCloseOnDocument() {
     setOpen(false);
+
+    const inc = function () {};
   }
   return (
     <>
       <button onClick={handleToggleModal} className={styles.basketBtn}>
-        <box-icon color="black" name="cart" size="md" type="logo"></box-icon>
+        <BiCart color="black" size="2rem" />
       </button>
       {open && (
         <div className={styles.cartContainer}>
@@ -36,12 +43,16 @@ function Cart() {
               </li>
             ))}
           </ul>
-          <a href="/checkout">Check Out Now!</a>
+          <h3>Total:£50</h3>
+          <Link to="/cart">
+            <button className={styles.checkoutButton}>Check Out Now</button>
+          </Link>
 
-          <div className={styles.cartContent}></div>
-          <button className={styles.button} onClick={handleToggleModal}>
-            &times; Close
-          </button>
+          <div>
+            <button className={styles.closeButton} onClick={handleToggleModal}>
+              &times; Minimize
+            </button>
+          </div>
         </div>
       )}
     </>

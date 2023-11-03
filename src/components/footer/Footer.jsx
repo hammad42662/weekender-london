@@ -1,35 +1,42 @@
 import styles from "./footer.module.css";
+import {
+  BiLogoFacebookCircle,
+  BiLogoTwitter,
+  BiLogoInstagram,
+  BiLogoPinterest,
+  BiLogoYoutube,
+} from "react-icons/bi";
 function Footer() {
   return (
     <footer className={styles.footer}>
       <ul className={styles.socialLinks}>
         <li>
           <a href="https://facebook.com">
-            <box-icon name="facebook" type="logo" color="white"></box-icon>
+            <BiLogoFacebookCircle color="white" size="2rem" />
           </a>
         </li>
         <li>
           {" "}
           <a href="https://instagram.com">
-            <box-icon name="instagram-alt" type="logo" color="white"></box-icon>
+            <BiLogoInstagram color="white" size="2rem" />
           </a>
         </li>
         <li>
           {" "}
           <a href="https://x.com">
-            <box-icon name="twitter" type="logo" color="white"></box-icon>
+            <BiLogoTwitter color="white" size="2rem" />
           </a>
         </li>
         <li>
           {" "}
           <a href="https://pinterest.com">
-            <box-icon name="pinterest-alt" type="logo" color="white"></box-icon>
+            <BiLogoPinterest color="white" size="2rem" />
           </a>
         </li>
         <li>
           {" "}
           <a href="https://youtube.com">
-            <box-icon name="youtube" type="logo" color="white"></box-icon>
+            <BiLogoYoutube color="white" size="2rem" />
           </a>
         </li>
         <li>
