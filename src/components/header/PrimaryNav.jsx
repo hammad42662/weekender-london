@@ -1,21 +1,24 @@
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styles from "./PrimaryNav.module.css";
 import Cart from "../cart/Cart";
+import "boxicons";
 function PrimaryNav() {
   return (
     <nav className={styles.primaryNav}>
-      <ul>
-        <li>
-          <NavLink to="/" as={NavLink} className={styles.logo}>
-            Weekender London
-          </NavLink>
-        </li>
-        <li>Wishlist</li>
-        <li>Sign In</li>
-        <li>
-          <Cart />
-        </li>
-      </ul>
+      <div className={styles.logoContainer}>
+        <NavLink to="/" as={NavLink} className={styles.logo}>
+          <span>Weekender London</span>
+          <box-icon
+            type="solid"
+            name="shopping-bags"
+            color="black"
+            size="sm"
+          ></box-icon>
+        </NavLink>
+      </div>
+      <div>
+        <Cart />
+      </div>
     </nav>
   );
 }

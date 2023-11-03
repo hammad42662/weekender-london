@@ -14,20 +14,25 @@ function Cart() {
   return (
     <>
       <button onClick={handleToggleModal} className={styles.basketBtn}>
-        Basket
+        <box-icon color="black" name="cart" size="md" type="logo"></box-icon>
       </button>
       {open && (
         <div className={styles.cartContainer}>
           <h1 onMouseDown={handleCloseOnDocument}>Your Items</h1>
           <hr />
-          <ul>
+          <ul className={styles.cartItemsContainer}>
             {MenBagsObj.map((item) => (
-              <li key={item.id}>
+              <li key={item.id} className={styles.cartItems}>
                 <img src={item.image1} />
-                <p>{item.name}</p>
-                <span>{item.price} </span>
-                <button>Remove Item</button>
-                <hr />
+                <p className={styles.itemName}>{item.name}</p>
+
+                <span className={styles.itemPrice}>{item.price} </span>
+                <p className={styles.itemQuantity}>Quantity 2</p>
+                <div className={styles.countBtn}>
+                  <button>-</button>
+                  <button>+</button>
+                </div>
+                <hr className={styles.listLine} />
               </li>
             ))}
           </ul>

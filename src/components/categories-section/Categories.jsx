@@ -22,30 +22,29 @@ function Categories() {
   return (
     <main>
       <h1>Categories</h1>
-      <ul className={styles.categoriesList}>
+      <ul className={styles.categoriesListContainer}>
         {categories.map((category) => (
-          <li key={category.id}>
+          <li key={category.id} className={styles.categoriesList}>
             <img src={category.path} alt="categories image" />
-            <div className={styles.categoriesContent}>
-              <p>{category.names}</p>
-              <Link
-                to={
-                  category.id === 11
-                    ? "/menbags"
-                    : category.id === 22
-                    ? "/womenbags"
-                    : "/accessories"
-                }
-              >
-                <Button>
-                  {category.id === 11
-                    ? "Shop Men's Bags"
-                    : category.id === 22
-                    ? "Shop Women's Bags"
-                    : "Shop Accessories"}
-                </Button>
-              </Link>
-            </div>
+
+            <p>{category.names}</p>
+            <Link
+              to={
+                category.id === 11
+                  ? "/menbags"
+                  : category.id === 22
+                  ? "/womenbags"
+                  : "/accessories"
+              }
+            >
+              <Button margin="10px 0px 0px 0px">
+                {category.id === 11
+                  ? "Shop Men's Bags"
+                  : category.id === 22
+                  ? "Shop Women's Bags"
+                  : "Shop Accessories"}
+              </Button>
+            </Link>
           </li>
         ))}
       </ul>

@@ -1,30 +1,29 @@
 main {
-  margin: 100px 0px 0px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
 }
 main h1 {
   margin-bottom: 50px;
 }
-.categoriesList {
+.categoriesListContainer {
   display: flex;
   align-items: center;
-  gap: 90px;
+  gap: 20px;
   list-style: none;
 }
-.categoriesList li {
-  /* background-color: brown;
-  border: 10px solid black; */
+.categoriesList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.categoriesList li img {
+.categoriesList img {
   width: 50%;
   height: auto;
   transition: transform 0.5s ease-in-out;
 }
-.categoriesList li img:hover {
+.categoriesList img:hover {
   transform: scale(1.1);
-}
-.categoriesContent {
-  margin-left: 2em;
-
-  font-weight: bolder;
-  align-self: baseline;
 }

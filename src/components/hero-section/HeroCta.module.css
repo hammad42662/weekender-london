@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap");
 .cta {
   position: absolute;
-  top: 70%;
+  top: 50%;
   left: 10%;
   color: rgba(0, 0, 0, 0.8);
   font-family: "Dosis", sans-serif;
   font-size: 1.6rem;
+  height: auto;
 }
 @keyframes slide-in {
   0% {
@@ -18,4 +19,39 @@
 
 .cta {
   animation: slide-in 1s linear;
+}
+@media only screen and(min-width: 768px) and (max-width: 1024px) {
+  .cta {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (min-width: 621px) and (max-width: 767px) {
+  .cta {
+    font-size: 1.1rem;
+    top: 37%;
+  }
+}
+@media only screen and (min-width: 521px) and (max-width: 620px) {
+  .cta {
+    font-size: 1.1rem;
+    top: 35%;
+  }
+}
+@media only screen and (min-width: 471px) and (max-width: 520px) {
+  .cta {
+    font-size: 1.1rem;
+    top: 34%;
+  }
+}
+@media only screen and (min-width: 371px) and (max-width: 470px) {
+  .cta {
+    font-size: 0.9rem;
+    top: 34%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 370px) {
+  .cta {
+    font-size: 0.8rem;
+    top: 30%;
+  }
 }

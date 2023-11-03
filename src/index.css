@@ -2,8 +2,10 @@
 :root {
   --global-margin: 0px 150px 0px 150px;
 }
-body {
+* {
   margin: 0px;
+}
+body {
   color: rgba(0, 0, 0, 0.8);
   font-family: "Poppins", sans-serif;
   display: block;

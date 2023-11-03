@@ -1,20 +1,20 @@
 .offerMain {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 100px 150px 100px 150px;
+  /* align-items: center; */
+
+  gap: 90px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.offerMain div {
-  display: flex;
+.poster {
   height: auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   position: relative;
 }
 .poster img {
-  width: 80%;
-  height: auto;
+  width: 32vw;
+  max-width: auto;
+  max-height: auto;
   transition: transform 0.5s ease-in-out;
   border-radius: 50px;
 }
@@ -24,9 +24,9 @@
 .posterButton {
   position: absolute;
   top: 73%;
-  left: 35%;
-  padding: 17px 25px 17px 25px;
-  background-color: rgba(0, 0, 0, 0.5);
+  left: 33%;
+  padding: 17px 35px 17px 35px;
+  background-color: rgba(233, 3, 3, 0.9);
   color: rgb(255, 255, 255);
   font-size: 1.1rem;
   font-weight: bold;
