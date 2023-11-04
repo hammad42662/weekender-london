@@ -4,20 +4,41 @@ import MenBagsObj from "../menCategory/MenBagsObject";
 import { Link } from "react-router-dom";
 import { BiCart } from "react-icons/bi";
 function reducer(state, action) {
-  console.log(state, action);
+  switch (action.type) {
+    case "inc":
+      return { ...state, count: state.count + 1 };
+    case "dec":
+      if (state.count <= 0) {
+        return state;
+      }
+      return { ...state, count: state.count - 1 };
+
+    default:
+      throw new Error("Unknown action");
+  }
 }
 function Cart() {
-  const [count, dispatch] = useReducer(reducer, 0);
+  const initialState = { count: 0 };
+  const [state, dispatch] = useReducer(reducer, initialState);
+  const { count } = state;
   const [open, setOpen] = useState(false);
+  const [total, setTotal] = useState(0);
+
   function handleToggleModal() {
     setOpen(!open);
-    console.log(open ? "close" : "open");
   }
   function handleCloseOnDocument() {
     setOpen(false);
-
-    const inc = function () {};
   }
+
+  const inc = function () {
+    dispatch({ type: "inc", payload: 1 });
+    setTotal(total + item.price);
+  };
+  const dec = function () {
+    dispatch({ type: "dec", payload: 1 });
+  };
+
   return (
     <>
       <button onClick={handleToggleModal} className={styles.basketBtn}>
@@ -33,17 +54,17 @@ function Cart() {
                 <img src={item.image1} />
                 <p className={styles.itemName}>{item.name}</p>
 
-                <span className={styles.itemPrice}>{item.price} </span>
-                <p className={styles.itemQuantity}>Quantity 2</p>
+                <span className={styles.itemPrice}>£{item.price * count} </span>
+                <p className={styles.itemQuantity}>Quantity {count}</p>
                 <div className={styles.countBtn}>
-                  <button>-</button>
-                  <button>+</button>
+                  <button onClick={dec}>-</button>
+                  <button onClick={inc}>+</button>
                 </div>
                 <hr className={styles.listLine} />
               </li>
             ))}
           </ul>
-          <h3>Total:£50</h3>
+          <h3>Total:£{total}</h3>
           <Link to="/cart">
             <button className={styles.checkoutButton}>Check Out Now</button>
           </Link>
@@ -59,9 +80,3 @@ function Cart() {
   );
 }
 export default Cart;
-{
-  /* <img src="../public/images/menbags/his-carry-all.jpg" />
-<p>Backpack Side Pocket</p>
-<span>$35</span>
-  <button>Remove Item</button> */
-}

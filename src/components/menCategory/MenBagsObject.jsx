@@ -6,7 +6,7 @@ const MenBagsObj = [
     image2: "../public/images/menbags/his-carry-all-inside.jpg",
     image3: "../public/images/menbags/his-carry-all-close.jpg",
     image4: "../public/images/menbags/his-carry-all-front.jpg",
-    price: "£50",
+    price: 50,
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const MenBagsObj = [
     image2: "../public/images/menbags/backpack-inside.jpg",
     image3: "../public/images/menbags/backpack-close.jpg",
     image4: "../public/images/menbags/backpack-front.jpg",
-    price: "£40",
+    price: 40,
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const MenBagsObj = [
     image2: "../public/images/menbags/premium-weekend-bag-inside.jpg",
     image3: "../public/images/menbags/premium-weekend-bag-close.jpg",
     image4: "../public/images/menbags/premium-weekend-bag-front.jpg",
-    price: "£60",
+    price: 60,
   },
 ];
 export default MenBagsObj;

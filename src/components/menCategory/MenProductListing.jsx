@@ -17,7 +17,7 @@ function MenProductListing({ cartItems, handleCartItems }) {
           <li key={bag.id} className={styles.card}>
             <img src={bag.image1} alt="bag image" className={styles.mainImg} />
 
-            <p>{bag.price}</p>
+            <p>£{bag.price}</p>
             <h3>{bag.name}</h3>
             <button className={styles.addToCart} onClick={handleCartItems}>
               Add To cart
