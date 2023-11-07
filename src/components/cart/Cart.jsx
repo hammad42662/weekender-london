@@ -9,7 +9,7 @@ function reducer(state, action) {
     case "inc":
       return { ...state, count: state.count + 1 };
     case "dec":
-      if (state.count <= 0) {
+      if (state.count <= 1) {
         return state;
       }
       return { ...state, count: state.count - 1 };
@@ -23,23 +23,14 @@ function Cart() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { count } = state;
   const [open, setOpen] = useState(false);
-  const [total, setTotal] = useState(0);
   const { cartItems, setCartItems } = useContext(CartContext);
+  const total = cartItems.reduce((acc, item) => acc + item.total, 0);
   function handleToggleModal() {
     setOpen(!open);
   }
   function handleCloseOnDocument() {
     setOpen(false);
   }
-
-  const inc = function (itemId) {
-    dispatch({ type: "inc", payload: 1 });
-    updateItemCount(itemId, count + 1);
-  };
-  const dec = function (itemId) {
-    dispatch({ type: "dec", payload: 1 });
-    updateItemCount(itemId, count - 1);
-  };
   const updateItemCount = (itemId, newCount) => {
     setCartItems((prevCartItems) =>
       prevCartItems.map((item) =>
@@ -49,6 +40,15 @@ function Cart() {
       )
     );
   };
+  const inc = function (itemId) {
+    dispatch({ type: "inc", payload: 1 });
+    updateItemCount(itemId, count + 1);
+  };
+  const dec = function (itemId) {
+    dispatch({ type: "dec", payload: 1 });
+    updateItemCount(itemId, count - 1);
+  };
+
   return (
     <>
       <button onClick={handleToggleModal} className={styles.basketBtn}>
