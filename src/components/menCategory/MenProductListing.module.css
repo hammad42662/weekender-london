@@ -2,14 +2,15 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  width: auto;
   align-items: center;
   align-content: center;
   margin: var(--global-margin);
 }
 .card {
-  width: 30%; /* Adjust the width as needed, considering some space for margins or padding */
-  margin-bottom: 16px; /* Optional: add some bottom margin for spacing between cards */
+  width: 30%;
+  margin-bottom: 16px;
   border: 1px solid #ccc;
   padding: 16px;
   box-sizing: border-box;
@@ -42,25 +43,3 @@
     flex-direction: column;
   }
 }
-/* .arrowRight {
-  position: absolute;
-  top: 35%;
-  left: 1%;
-}
-.arrowLeft {
-  position: absolute;
-  top: 35%;
-  right: 11%;
-}
-.arrowRight,
-.arrowLeft {
-  font-size: 1.4em;
-  color: rgb(133, 116, 116);
-  text-decoration: none;
-}
-.carouselImage {
-  display: none;
-  width: 90%;
-  border-radius: 10px;
-  position: relative;
-} */

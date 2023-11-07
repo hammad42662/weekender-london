@@ -7,12 +7,6 @@ function PrimaryNav() {
       <div className={styles.logoContainer}>
         <NavLink to="/" as={NavLink} className={styles.logo}>
           <span>Weekender London</span>
-          {/* <box-icon
-            type="solid"
-            name="shopping-bags"
-            color="black"
-            size="sm"
-          ></box-icon> */}
         </NavLink>
       </div>
       <div>

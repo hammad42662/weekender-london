@@ -1,8 +1,9 @@
-import { useReducer, useState } from "react";
+import { useContext, useReducer, useState } from "react";
 import styles from "./Cart.module.css";
-import MenBagsObj from "../menCategory/MenBagsObject";
+// import MenBagsObj from "../menCategory/MenBagsObject";
 import { Link } from "react-router-dom";
 import { BiCart } from "react-icons/bi";
+import { CartContext } from "../../context/CartContext";
 function reducer(state, action) {
   switch (action.type) {
     case "inc":
@@ -18,12 +19,12 @@ function reducer(state, action) {
   }
 }
 function Cart() {
-  const initialState = { count: 0 };
+  const initialState = { count: 1 };
   const [state, dispatch] = useReducer(reducer, initialState);
   const { count } = state;
   const [open, setOpen] = useState(false);
   const [total, setTotal] = useState(0);
-
+  const { cartItems, setCartItems } = useContext(CartContext);
   function handleToggleModal() {
     setOpen(!open);
   }
@@ -31,14 +32,23 @@ function Cart() {
     setOpen(false);
   }
 
-  const inc = function () {
+  const inc = function (itemId) {
     dispatch({ type: "inc", payload: 1 });
-    setTotal(total + item.price);
+    updateItemCount(itemId, count + 1);
   };
-  const dec = function () {
+  const dec = function (itemId) {
     dispatch({ type: "dec", payload: 1 });
+    updateItemCount(itemId, count - 1);
   };
-
+  const updateItemCount = (itemId, newCount) => {
+    setCartItems((prevCartItems) =>
+      prevCartItems.map((item) =>
+        item.id === itemId
+          ? { ...item, count: newCount, total: item.price * newCount }
+          : item
+      )
+    );
+  };
   return (
     <>
       <button onClick={handleToggleModal} className={styles.basketBtn}>
@@ -49,16 +59,17 @@ function Cart() {
           <h1 onMouseDown={handleCloseOnDocument}>Your Items</h1>
           <hr />
           <ul className={styles.cartItemsContainer}>
-            {MenBagsObj.map((item) => (
+            {cartItems.map((item) => (
               <li key={item.id} className={styles.cartItems}>
                 <img src={item.image1} />
                 <p className={styles.itemName}>{item.name}</p>
 
                 <span className={styles.itemPrice}>£{item.price * count} </span>
+                {console.log(item.price)}
                 <p className={styles.itemQuantity}>Quantity {count}</p>
                 <div className={styles.countBtn}>
-                  <button onClick={dec}>-</button>
-                  <button onClick={inc}>+</button>
+                  <button onClick={() => dec(item.id)}>-</button>
+                  <button onClick={() => inc(item.id)}>+</button>
                 </div>
                 <hr className={styles.listLine} />
               </li>
