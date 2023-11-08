@@ -1,30 +1,23 @@
 const WomenBagsObj = [
   {
-    id: 1,
+    id: 1987654,
     name: "His Carry All",
-    image1: "../public/images/womenbags/his-carry-all.jpg",
-    image2: "../public/images/womenbags/his-carry-all-inside.jpg",
-    image3: "../public/images/womenbags/his-carry-all-close.jpg",
-    image4: "../public/images/womenbags/his-carry-all-front.jpg",
-    price: "£50",
+    image1: "../public/images/womenbags/padded-tote-shopper.jpg",
+
+    price: 50,
   },
   {
-    id: 2,
+    id: 2435676,
     name: " Leather backpack",
-    image1: "../public/images/womenbags/backpack-back.jpg",
-    image2: "../public/images/womenbags/backpack-inside.jpg",
-    image3: "../public/images/womenbags/backpack-close.jpg",
-    image4: "../public/images/womenbags/backpack-front.jpg",
-    price: "£40",
+    image1: "../public/images/womenbags/top-handle-shoulderbag.jpg",
+
+    price: 40,
   },
   {
-    id: 3,
+    id: 3467673,
     name: "Premium Weekend Bag",
-    image1: "../public/images/womenbags/premium-weekend-bag.jpg",
-    image2: "../public/images/womenbags/premium-weekend-bag-inside.jpg",
-    image3: "../public/images/womenbags/premium-weekend-bag-close.jpg",
-    image4: "../public/images/womenbags/premium-weekend-bag-front.jpg",
-    price: "£60",
+    image1: "../public/images/womenbags/top-handle-totebag.jpg",
+    price: 60,
   },
 ];
 

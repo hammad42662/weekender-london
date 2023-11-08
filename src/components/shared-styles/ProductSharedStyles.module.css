@@ -7,6 +7,7 @@
   align-items: center;
   align-content: center;
   margin: var(--global-margin);
+  margin-top: 50px;
 }
 .card {
   width: 30%;

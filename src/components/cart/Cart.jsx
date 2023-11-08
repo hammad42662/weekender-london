@@ -1,6 +1,5 @@
 import { useContext, useReducer, useState } from "react";
 import styles from "./Cart.module.css";
-// import MenBagsObj from "../menCategory/MenBagsObject";
 import { Link } from "react-router-dom";
 import { BiCart } from "react-icons/bi";
 import { CartContext } from "../../context/CartContext";
