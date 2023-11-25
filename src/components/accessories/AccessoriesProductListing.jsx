@@ -1,23 +1,23 @@
-import styles from "../shared-styles/ProductSharedStyles.module.css";
 import AccessoriesHeading from "./AccessoriesHeading";
 import AccesoriesObj from "./AccessoriesObj";
+import React, { useState } from "react";
+import ProductListing from "../ReusableComponents/ProductListings";
 
-function AccessoriesProductLisitng() {
+function AccessoriesProductListing() {
+  const [product, setProduct] = useState([...AccesoriesObj]);
+
+  const handleAddToCart = (clickedProduct) => {
+    console.log(
+      `Product added to cart: ${clickedProduct.name} (Accesories category)`
+    );
+  };
+
   return (
     <>
       <AccessoriesHeading />
-      <ul className={styles.cardContainer}>
-        {AccesoriesObj.map((bag) => (
-          <li key={bag.id} className={styles.card}>
-            <img src={bag.image1} alt="bag image" className={styles.mainImg} />
-
-            <p>£{bag.price}</p>
-            <h3>{bag.name}</h3>
-            <button className={styles.addToCart}>Add To cart</button>
-          </li>
-        ))}
-      </ul>
+      <ProductListing products={product} onAddToCart={handleAddToCart} />
     </>
   );
 }
-export default AccessoriesProductLisitng;
+
+export default AccessoriesProductListing;

@@ -7,7 +7,7 @@ const AccesoriesObj = [
     price: 50,
   },
   {
-    id: 7809765,
+    id: 780975,
     name: " Leather backpack",
     image1: "../public/images/accessories/faux-sheepskin-cuffed-gloves.jpg",
 

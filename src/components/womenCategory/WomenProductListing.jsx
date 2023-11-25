@@ -1,22 +1,23 @@
-import styles from "../shared-styles/ProductSharedStyles.module.css";
 import WomensHeading from "./WomensHeading";
 import WomenBagsObj from "./WomenBagsObj";
+import React, { useState } from "react";
+import ProductListing from "../ReusableComponents/ProductListings";
+
 function WomenProductListing() {
+  const [product, setProduct] = useState([...WomenBagsObj]);
+
+  const handleAddToCart = (clickedProduct) => {
+    console.log(
+      `Product added to cart: ${clickedProduct.name} (Women's category)`
+    );
+  };
+
   return (
     <>
       <WomensHeading />
-      <ul className={styles.cardContainer}>
-        {WomenBagsObj.map((bag) => (
-          <li key={bag.id} className={styles.card}>
-            <img src={bag.image1} alt="bag image" className={styles.mainImg} />
-
-            <p>£{bag.price}</p>
-            <h3>{bag.name}</h3>
-            <button className={styles.addToCart}>Add To cart</button>
-          </li>
-        ))}
-      </ul>
+      <ProductListing products={product} onAddToCart={handleAddToCart} />
     </>
   );
 }
+
 export default WomenProductListing;

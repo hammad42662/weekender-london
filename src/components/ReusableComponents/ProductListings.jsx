@@ -1,26 +1,32 @@
+import React, { useContext } from "react";
 import styles from "../shared-styles/ProductSharedStyles.module.css";
-import MenHeading from "./MenHeading";
-import MenBagsObj from "./MenBagsObject";
-import { useContext, useState } from "react";
 import { CartContext } from "../../context/CartContext";
 
-function MenProductListing() {
-  const [product, setProduct] = useState([...MenBagsObj]);
+function ProductListing({ products, onAddToCart }) {
   const { cartItems, setCartItems } = useContext(CartContext);
-  function addToCart(clickedBag) {
-    setCartItems([...cartItems, clickedBag]);
-  }
+
+  const addToCart = (clickedProduct) => {
+    setCartItems([...cartItems, clickedProduct]);
+    onAddToCart(clickedProduct);
+  };
+
   return (
     <>
-      <MenHeading />
       <ul className={styles.cardContainer}>
-        {product.map((bag) => (
-          <li key={bag.id} className={styles.card}>
-            <img src={bag.image1} alt="bag image" className={styles.mainImg} />
+        {products.map((product) => (
+          <li key={product.id} className={styles.card}>
+            <img
+              src={product.image1}
+              alt={`${product.name} image`}
+              className={styles.mainImg}
+            />
 
-            <p>£{bag.price}</p>
-            <h3>{bag.name}</h3>
-            <button className={styles.addToCart} onClick={() => addToCart(bag)}>
+            <p>£{product.price}</p>
+            <h3>{product.name}</h3>
+            <button
+              className={styles.addToCart}
+              onClick={() => addToCart(product)}
+            >
               Add To cart
             </button>
           </li>
@@ -30,4 +36,4 @@ function MenProductListing() {
   );
 }
 
-export default MenProductListing;
+export default ProductListing;

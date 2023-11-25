@@ -12,31 +12,51 @@ function Footer() {
       <ul className={styles.socialLinks}>
         <li>
           <a href="https://facebook.com">
-            <BiLogoFacebookCircle color="white" size="2rem" />
+            <BiLogoFacebookCircle
+              color="white"
+              size="2rem"
+              className={styles.searchIcon}
+            />
           </a>
         </li>
         <li>
           {" "}
           <a href="https://instagram.com">
-            <BiLogoInstagram color="white" size="2rem" />
+            <BiLogoInstagram
+              color="white"
+              size="2rem"
+              className={styles.searchIcon}
+            />
           </a>
         </li>
         <li>
           {" "}
           <a href="https://x.com">
-            <BiLogoTwitter color="white" size="2rem" />
+            <BiLogoTwitter
+              color="white"
+              size="2rem"
+              className={styles.searchIcon}
+            />
           </a>
         </li>
         <li>
           {" "}
           <a href="https://pinterest.com">
-            <BiLogoPinterest color="white" size="2rem" />
+            <BiLogoPinterest
+              color="white"
+              size="2rem"
+              className={styles.searchIcon}
+            />
           </a>
         </li>
         <li>
           {" "}
           <a href="https://youtube.com">
-            <BiLogoYoutube color="white" size="2rem" />
+            <BiLogoYoutube
+              color="white"
+              size="2rem"
+              className={styles.searchIcon}
+            />
           </a>
         </li>
         <li>
