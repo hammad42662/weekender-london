@@ -6,7 +6,7 @@ import Accessories from "./pages/Accessories";
 import PageNotFound from "./pages/PageNotFound";
 import Nav from "./components/header/Nav";
 import { CartProvider } from "./context/CartContext";
-import Footer from "./components/footer/footer";
+import Footer from "./components/footer/Footer.jsx";
 function App() {
   return (
     <CartProvider>
