@@ -4,9 +4,9 @@ import MenBags from "./pages/MenBags";
 import WomenBags from "./pages/WomenBags";
 import Accessories from "./pages/Accessories";
 import PageNotFound from "./pages/PageNotFound";
-import Footer from "./components/footer/footer";
-import { CartProvider } from "./context/CartContext";
 import Nav from "./components/header/Nav";
+import { CartProvider } from "./context/CartContext";
+import Footer from "./components/footer/footer";
 function App() {
   return (
     <CartProvider>
