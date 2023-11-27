@@ -3,8 +3,8 @@
 
 .primaryNav {
   width: 100%;
-  padding: 50px 0px 30px 0px;
-  background-color: transparent;
+  padding: 60px 0px 40px 0px;
+  background-color: black;
   font-family: "Young Serif";
   display: flex;
   justify-content: space-evenly;
@@ -14,29 +14,38 @@
 .logo {
   font-family: "Autour One";
   font-size: 2rem;
-  color: #333533;
+  color: #fff1d0;
   text-decoration: none;
+}
+.logoContainer {
+  margin-left: 20rem;
+  border: 1px solid white;
+  padding: 10px 5px;
 }
 
 .cartIcon {
-  justify-self: end;
+  flex-grow: ;
 }
 .cartIcon:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 400px) and (min-width: 281px) {
-  .primaryNav {
-    flex-direction: column;
-  }
-  .logo {
-    font-size: 1.5rem;
+@media screen and (max-width: 1200px) and (min-width: 992px) {
+  .logoContainer {
+    margin-left: 10rem;
   }
 }
-@media screen and (max-width: 281px) and (min-width: 100px) {
-  .primaryNav {
-    flex-direction: column;
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .logoContainer {
+    margin-left: 9rem;
   }
-  .logo {
-    font-size: 1.1rem;
+}
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  .logoContainer {
+    margin-left: 4rem;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 300px) {
+  .logoContainer {
+    margin-left: 1rem;
   }
 }

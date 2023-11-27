@@ -69,18 +69,16 @@ function Testimonials() {
           enabled: true,
         }}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className={styles.swiper}
       >
         {reviewer.map((review) => (
-          <SwiperSlide key={review.id}>
-            <li className={styles.testimonial}>
-              <img src={review.image} />
-              <span>{review.rating}</span>
-              <p>{review.review}</p>
+          <SwiperSlide key={review.id} className={styles.swiperSlide}>
+            <img src={review.image} />
+            <span>{review.rating}</span>
+            <p>{review.review}</p>
 
-              <BiSolidQuoteLeft color="darkred" size="1.8rem" />
-              <h2>{review.name}</h2>
-            </li>
+            <BiSolidQuoteLeft color="darkred" size="1.8rem" />
+            <h2>{review.name}</h2>
           </SwiperSlide>
         ))}
       </Swiper>

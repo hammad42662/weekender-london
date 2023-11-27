@@ -1,21 +1,21 @@
 const WomenBagsObj = [
   {
     id: 1987654,
-    name: "His Carry All",
+    name: "Puff Puff",
     image1: "../public/images/womenbags/padded-tote-shopper.jpg",
 
-    price: 50,
+    price: 100,
   },
   {
     id: 2435676,
-    name: " Leather backpack",
+    name: " Leather Bag",
     image1: "../public/images/womenbags/top-handle-shoulderbag.jpg",
 
     price: 40,
   },
   {
     id: 3467673,
-    name: "Premium Weekend Bag",
+    name: "Premium Shoulder Bag",
     image1: "../public/images/womenbags/top-handle-totebag.jpg",
     price: 60,
   },

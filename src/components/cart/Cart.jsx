@@ -58,7 +58,7 @@ function Cart() {
   return (
     <>
       <BiCart
-        color={count === 1 ? "black" : "red"}
+        color={count === 1 ? "#FFECD1" : "red"}
         size="2.4rem"
         onClick={handleToggleModal}
         className={styles.basketBtn}

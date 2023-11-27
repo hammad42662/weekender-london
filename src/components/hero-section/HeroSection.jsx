@@ -12,22 +12,20 @@ function HeroSection() {
     <main className={styles.hero}>
       <div className={styles.contentContainer}>
         <img
-          src="../public/images/hero-image.jpg"
+          src="../public/images/hero-image2.jpg"
           alt="hero-image"
           className={styles.bgImage}
         />
         <div className={styles.cta}>
           <div className={styles.heroHeading}>
-            <h1>Weekender London</h1>
-            <h2>Bags for the modern world</h2>
+            <h1>Weekender </h1>
+            <h2>"Bags for the modern world"</h2>
           </div>
           <p>
             Shop our collection of stylish and durable bags, perfect for work,
             travel, and everyday use.
           </p>
-          <Button onClick={handleClick} color="red">
-            Shop Now
-          </Button>
+          <button onClick={handleClick}>Shop Now</button>
         </div>
       </div>
     </main>

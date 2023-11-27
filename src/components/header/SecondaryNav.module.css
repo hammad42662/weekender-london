@@ -1,12 +1,12 @@
 .secondaryNav {
-  background-color: rgba(7, 0, 7, 0.9);
+  background-color: rgb(61, 20, 24);
   margin: 0px;
 }
 .secondaryNav ul {
   display: flex;
   justify-content: center;
   justify-content: space-evenly;
-  margin: 0px 0px 0px 0px;
+  font-size: 1rem;
 }
 .secondaryNav ul li {
   list-style: none;
@@ -14,4 +14,9 @@
 .listItems {
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+@media screen and (max-width: 480px) and (min-width: 300px) {
+  .secondaryNav ul {
+    font-size: 0.7rem;
+  }
 }

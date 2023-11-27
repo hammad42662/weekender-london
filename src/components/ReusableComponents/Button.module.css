@@ -1,16 +1,23 @@
 .btn {
-  padding: 10px 15px 10px 15px;
-  background-color: orangered;
+  padding: 15px 25px 15px 25px;
+  background-color: #3c1518;
   color: white;
   font-weight: bold;
-  border: none;
-  border-bottom: 2px solid black;
+  border: 5px solid rgb(0, 0, 0);
 }
 .btn:hover {
   cursor: pointer;
 }
-@media only screen and (min-width: 321px) and (max-width: 471px) {
+@media only screen and (min-width: 471px) and (max-width: 580px) {
   .btn {
-    padding: 6 10px 6px 10px;
+    padding: 6px 10px 6px 10px;
+    border: 2px solid rgb(0, 0, 0);
+  }
+}
+
+@media only screen and (max-width: 471px) {
+  .btn {
+    padding: 10px 15px 10px 15px;
+    border: 2px solid rgb(0, 0, 0);
   }
 }
