@@ -9,9 +9,8 @@ function PrimaryNav() {
           <span>Weekender London</span>
         </NavLink>
       </div>
-      <div>
-        <Cart />
-      </div>
+
+      <Cart className={styles.cartIcon} />
     </nav>
   );
 }

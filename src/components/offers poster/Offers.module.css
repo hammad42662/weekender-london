@@ -1,39 +1,80 @@
 .offerMain {
+  margin-top: 10rem;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  max-height: auto;
+}
+.offerMain h1 {
+  text-align: center;
+  margin-bottom: 6rem;
+  font-size: 2rem;
+}
+.posterMain {
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-
-  gap: 90px;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
 }
 .poster {
-  height: auto;
   position: relative;
+  overflow: hidden;
+  width: 50%;
+  /* border: 2px solid black; */
 }
 .poster img {
-  width: 32vw;
-  max-width: auto;
-  max-height: auto;
-  transition: transform 0.5s ease-in-out;
-  border-radius: 50px;
+  width: 55%;
+  height: auto;
+  display: block;
+  transition: 2s;
+  border: 2px;
+}
+.posterMain div:nth-child(1) img {
+  margin-left: 15rem;
+}
+.posterMain div:nth-child(2) img {
+  margin-left: 4rem;
 }
 .poster img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .posterButton {
   position: absolute;
-  top: 73%;
-  left: 33%;
-  padding: 17px 35px 17px 35px;
-  background-color: rgba(233, 3, 3, 0.9);
+
+  padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+  background-color: #272932;
   color: rgb(255, 255, 255);
   font-size: 1.1rem;
   font-weight: bold;
   border: none;
   border: 1px solid rgb(0, 0, 0);
 }
+
 .posterButton:hover {
   cursor: pointer;
-  background-color: black;
+  background-color: #e7ecef;
+  color: black;
+}
+.posterMain div:nth-child(1) button {
+  top: 85%;
+  left: 49%;
+}
+.posterMain div:nth-child(2) button {
+  top: 85%;
+  left: 26%;
+}
+@media screen and (max-width: 820px) and (min-width: 620px) {
+  .posterMain {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .posterMain div:nth-child(1) img {
+    margin-left: -20rem;
+  }
+  .posterMain div:nth-child(2) img {
+    margin-left: -20rem;
+  }
 }

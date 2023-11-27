@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@300&display=swap");
+.slider {
+  width: 100%;
+  margin: 10rem 0rem 0rem 0rem;
+}
 .testimonialsContainer {
-  position: relative;
   display: flex;
   /* margin-top: 10rem; */
   margin: 200px 20px 0px 20px;
@@ -26,11 +29,4 @@
   width: 10%;
   border-radius: 100px;
   height: auto;
-}
-
-.slider {
-  /* width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px; */
-  margin: 0px 200px 0px 200px;
 }

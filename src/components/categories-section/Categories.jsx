@@ -20,8 +20,8 @@ const categories = [
 ];
 function Categories() {
   return (
-    <main>
-      <h1>Categories</h1>
+    <section className={styles.categoryCon}>
+      <h1 className={styles.title}>Categories</h1>
       <ul className={styles.categoriesListContainer}>
         {categories.map((category) => (
           <li key={category.id} className={styles.categoriesList}>
@@ -48,7 +48,7 @@ function Categories() {
           </li>
         ))}
       </ul>
-    </main>
+    </section>
   );
 }
 export default Categories;

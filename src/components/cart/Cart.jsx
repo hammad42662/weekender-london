@@ -57,9 +57,12 @@ function Cart() {
 
   return (
     <>
-      <button onClick={handleToggleModal} className={styles.basketBtn}>
-        <BiCart color="black" size="2rem" />
-      </button>
+      <BiCart
+        color={count === 1 ? "black" : "red"}
+        size="2.4rem"
+        onClick={handleToggleModal}
+        className={styles.basketBtn}
+      />
 
       {open && (
         <div className={styles.cartContainer}>

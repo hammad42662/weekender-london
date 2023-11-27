@@ -40,7 +40,6 @@ function Footer() {
           </a>
         </li>
         <li>
-          {" "}
           <a href="https://pinterest.com">
             <BiLogoPinterest
               color="white"
@@ -50,7 +49,6 @@ function Footer() {
           </a>
         </li>
         <li>
-          {" "}
           <a href="https://youtube.com">
             <BiLogoYoutube
               color="white"
