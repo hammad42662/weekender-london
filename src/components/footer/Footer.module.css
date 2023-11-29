@@ -8,7 +8,6 @@
     rgba(62, 60, 84, 1) 0%,
     rgba(17, 17, 31, 1) 35%
   );
-  min-width: auto;
 }
 .socialLinks {
   display: flex;
@@ -18,17 +17,25 @@
   gap: 20px;
   margin-top: 60px;
 }
+.socialIcons {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  width: 50%;
+}
+
+.socialButtons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
 .googleBtn {
-  width: 100%;
-  height: 50px;
-  max-height: 50px;
-  max-width: 100%;
+  width: 10vw;
 }
 .appleBtn {
-  width: 100%;
-  height: 50px;
-  max-height: 50px;
-  max-width: 100%;
+  width: 8vw;
 }
 .hr {
   height: 60px;
@@ -46,9 +53,8 @@
   border: 1px solid white;
   margin-top: 20px;
 }
-/* @media only screen and (max-width: 400px) {
-  .socialLinks {
-    gap: 10px;
-    flex-direction: column;
+@media screen and (max-width: 720px) and (min-width: 620px) {
+  .searchicons {
+    font-size: 0.5rem;
   }
-} */
+}

@@ -22,12 +22,12 @@ function ProductListing({ products, onAddToCart }) {
             />
 
             <p>£{product.price}</p>
-            <h3>{product.name}</h3>
+            <h1>{product.name}</h1>
             <button
               className={styles.addToCart}
               onClick={() => addToCart(product)}
             >
-              Add To cart
+              Add to cart
             </button>
           </li>
         ))}
