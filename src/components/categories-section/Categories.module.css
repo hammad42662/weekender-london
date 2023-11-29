@@ -1,12 +1,11 @@
 .categoryCon {
   width: 100%;
   margin-top: 10rem;
-  height: auto;
 }
 .title {
-  text-align: center;
-  margin-bottom: 9rem;
+  margin: 0rem 0rem 6rem 10rem;
   font-size: 2rem;
+  color: #412234;
 }
 .categoriesListContainer {
   display: flex;
@@ -45,5 +44,10 @@
   }
   .categoriesList img {
     width: 30%;
+  }
+}
+@media screen and (max-width: 480px) and (min-width: 320px) {
+  .title {
+    margin: 0rem 0rem 6rem 3rem;
   }
 }

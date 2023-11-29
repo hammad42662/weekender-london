@@ -4,11 +4,11 @@
   margin: 12rem 0rem 0rem 0rem;
 }
 .offerMain h1 {
-  text-align: center;
-  margin-bottom: 6rem;
+  margin: 0rem 0rem 6rem 10rem;
   font-size: 2rem;
-  color: #070000;
+  color: #412234;
 }
+
 .posterMain {
   width: 100%;
   display: flex;
@@ -21,7 +21,9 @@
   position: relative;
 
   width: 100%;
-  /* border: 2px solid black; */
+}
+.poster:hover img {
+  filter: blur(1.1px);
 }
 .poster img {
   width: 450px;
@@ -34,11 +36,7 @@
 }
 .posterMain div:nth-child(2) img {
   margin-left: 4rem;
-}
-.poster img:hover {
-  transition: 1s ease-in;
-  transform: scale(1.1);
-  border-radius: 100px;
+  height: 603px;
 }
 .posterContent {
   position: absolute;
@@ -59,7 +57,7 @@
 }
 .posterButton {
   padding: 0.7rem 0.9rem 0.7rem 0.9rem;
-  background-color: #272932;
+  background-color: #412234;
   color: rgb(255, 255, 255);
   font-size: 1.1rem;
   font-weight: bold;
@@ -74,26 +72,30 @@
 }
 
 .poster:nth-child(2) .posterContent {
-  top: 30rem;
-  left: 13rem;
+  top: 5rem;
+  left: 15rem;
 }
 .poster:nth-child(2) .posterContent p {
-  margin: 0rem 0rem 2rem -2.9rem;
+  margin: 0rem 0rem 0.3rem -2.9rem;
 }
 .poster:nth-child(1) .posterContent p {
-  margin: 0rem 0rem 2rem -5rem;
+  margin: 0rem 0rem 0.3rem -5rem;
 }
-
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 1280px) and (min-width: 820px) {
+  .posterMain {
+    margin-left: -6rem;
+  }
+}
+@media screen and (max-width: 820px) and (min-width: 620px) {
   .posterMain {
     flex-direction: column;
     gap: 20px;
   }
   .posterMain div:nth-child(1) img {
-    margin-left: 13rem;
+    margin-left: 20%;
   }
   .posterMain div:nth-child(2) img {
-    margin-left: 13rem;
+    margin-left: 20%;
   }
   .poster img {
     width: 450px;
@@ -102,65 +104,135 @@
     font-size: 0.8rem;
   }
   .posterContent {
-    top: 20rem;
-    left: 19rem;
+    top: 70%;
+    left: 42%;
   }
   .poster:nth-child(2) .posterContent {
-    top: 20rem;
-    left: 20rem;
+    top: 70%;
+    left: 45%;
   }
   .poster:nth-child(2) .posterContent p {
-    margin: 0rem 0rem 2rem -2rem;
+    margin: 0rem 0rem 2rem -2.4rem;
     width: 120%;
     text-align: center;
   }
   .poster:nth-child(1) .posterContent p {
-    margin: 0rem 0rem 2rem -3rem;
+    margin: 0rem 0rem 2rem -2.7rem;
     width: 120%;
     text-align: center;
   }
 }
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 620px) and (min-width: 480px) {
+  .posterMain {
+    flex-direction: column;
+    gap: 20px;
+  }
   .poster img {
-    width: 350px;
+    width: 400px;
   }
   .posterMain div:nth-child(1) img {
-    margin-left: 8rem;
+    margin-left: 0rem;
+    margin-left: 4rem;
   }
   .posterMain div:nth-child(2) img {
-    margin-left: 8rem;
+    margin-left: 0rem;
+    margin-left: 4rem;
+    height: 410px;
   }
   .posterContent {
-    top: 25rem;
-    left: 15rem;
+    top: 70%;
+    left: 38%;
   }
   .poster:nth-child(2) .posterContent {
-    top: 25rem;
-    left: 15rem;
+    top: 70%;
+    left: 40%;
   }
   .poster:nth-child(2) .posterContent p {
-    margin: 0rem 0rem 2rem -2rem;
-    width: 120%;
+    margin: 0rem 0rem 0.3rem -37%;
+    width: 100%;
     text-align: center;
+    font-size: 0.9rem;
   }
   .poster:nth-child(1) .posterContent p {
-    margin: 0rem 0rem 2rem -3rem;
-    width: 120%;
+    margin: 0rem 0rem 0.3rem -30%;
+    width: 100%;
     text-align: center;
-  }
-  .posterContent p {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
   }
   .posterButton {
-    padding: 0.3rem 0.7rem 0.3rem 0.7rem;
-    font-size: 0.9rem;
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+
+    font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 480px) and (min-width: 320px) {
+  .posterMain {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .poster img {
+    width: 320px;
+  }
   .posterMain div:nth-child(1) img {
-    margin-left: 0.1rem;
+    margin-left: 0rem;
+    margin-left: 12%;
   }
   .posterMain div:nth-child(2) img {
-    margin-left: 0.1rem;
+    margin-left: 0rem;
+    margin-left: 12%;
+    height: 410px;
+  }
+  .posterContent {
+    top: 16rem;
+    left: 9rem;
+  }
+  .poster:nth-child(2) .posterContent {
+    top: 16rem;
+    left: 11rem;
+  }
+  .poster:nth-child(2) .posterContent p {
+    margin: 0rem 0rem 0.3rem -37%;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .poster:nth-child(1) .posterContent p {
+    margin: 0rem 0rem 0.3rem -30%;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  .posterButton {
+    padding: 0.7rem 0.9rem 0.7rem 0.9rem;
+
+    font-size: 0.7rem;
+  }
+  .offerMain h1 {
+    margin: -4rem 0rem 6rem 3rem;
+  }
+}
+@media screen and (max-width: 410px) and (min-width: 320px) {
+  .posterMain div:nth-child(1) img {
+    margin-left: 3%;
+  }
+  .posterMain div:nth-child(2) img {
+    margin-left: 3%;
+    height: 410px;
+  }
+  .posterContent {
+    left: 6.3rem;
+  }
+  .poster:nth-child(2) .posterContent {
+    left: 8rem;
+  }
+  .poster:nth-child(2) .posterContent p {
+    margin: 0rem 0rem 0.3rem -37%;
+  }
+  .poster:nth-child(1) .posterContent p {
+    margin: 0rem 0rem 0.3rem -30%;
+  }
+  .offerMain h1 {
+    margin: -4rem 0rem 6rem 3rem;
   }
 }

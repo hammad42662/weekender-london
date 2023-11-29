@@ -1,5 +1,11 @@
 .secondaryNav {
-  background-color: rgb(61, 20, 24);
+  background: rgb(62, 60, 84);
+  background: rgb(62, 60, 84);
+  background: radial-gradient(
+    circle,
+    rgba(62, 60, 84, 1) 0%,
+    rgba(17, 17, 31, 1) 29%
+  );
   margin: 0px;
 }
 .secondaryNav ul {

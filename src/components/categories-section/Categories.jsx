@@ -37,7 +37,7 @@ function Categories() {
                   : "/accessories"
               }
             >
-              <Button margin="10px 0px 0px 0px">
+              <Button margin="10px 0px 0px 0px" color="#412234  ">
                 {category.id === 11
                   ? "Shop Men's Bags"
                   : category.id === 22
