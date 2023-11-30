@@ -1,6 +1,6 @@
-import styles from "./testimonials.module.css";
+import styles from "./Testimonials.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination, Keyboard } from "swiper/modules";
+import { EffectCoverflow, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";

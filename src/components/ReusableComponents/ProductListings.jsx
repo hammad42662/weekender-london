@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import styles from "../shared-styles/ProductSharedStyles.module.css";
 import { CartContext } from "../../context/CartContext";
 

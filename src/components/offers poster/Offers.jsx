@@ -1,4 +1,4 @@
-import styles from "./offers.module.css";
+import styles from "./Offers.module.css";
 function Offers() {
   return (
     <section className={styles.offerMain}>

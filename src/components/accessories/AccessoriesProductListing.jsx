@@ -1,7 +1,8 @@
 import AccessoriesHeading from "./AccessoriesHeading";
 import AccesoriesObj from "./AccessoriesObj";
-import React, { useState } from "react";
+
 import ProductListing from "../ReusableComponents/ProductListings";
+import { useState } from "react";
 
 function AccessoriesProductListing() {
   const [product, setProduct] = useState([...AccesoriesObj]);

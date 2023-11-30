@@ -1,6 +1,5 @@
 import styles from "./HeroSection.module.css";
-import { redirect, useNavigate } from "react-router-dom";
-import Button from "../ReusableComponents/Button";
+import { useNavigate } from "react-router-dom";
 
 function HeroSection() {
   const navigate = useNavigate();

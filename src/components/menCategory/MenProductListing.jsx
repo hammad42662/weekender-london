@@ -1,7 +1,7 @@
-import React, { useState } from "react";
 import MenHeading from "./MenHeading";
 import MenBagsObj from "./MenBagsObject";
 import ProductListing from "../ReusableComponents/ProductListings";
+import { useState } from "react";
 
 function MenProductListing() {
   const [product, setProduct] = useState([...MenBagsObj]);
