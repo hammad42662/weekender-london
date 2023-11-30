@@ -3,7 +3,7 @@ import WomenBagsObj from "./WomenBagsObj";
 import ProductListing from "../ReusableComponents/ProductListings";
 import { useState } from "react";
 function WomenProductListing() {
-  const [product, setProduct] = useState([...WomenBagsObj]);
+  const [product] = useState([...WomenBagsObj]);
 
   const handleAddToCart = (clickedProduct) => {
     console.log(

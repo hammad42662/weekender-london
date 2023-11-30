@@ -10,7 +10,7 @@ function HeroSection() {
     <main className={styles.hero}>
       <div className={styles.contentContainer}>
         <img
-          src="../public/images/hero-image2.jpg"
+          src="images/hero-image2.jpg"
           alt="hero-image"
           className={styles.bgImage}
         />

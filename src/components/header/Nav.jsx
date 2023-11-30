@@ -5,7 +5,6 @@ import { Outlet } from "react-router-dom";
 function Nav() {
   return (
     <>
-      {" "}
       <header className={styles.nav}>
         <PrimaryNav />
         <SecondaryNav />

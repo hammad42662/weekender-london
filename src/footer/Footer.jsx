@@ -67,7 +67,7 @@ function Footer() {
             <li>
               <a href="https://apps.apple.com/gb/app/apple-store/id375380948">
                 <img
-                  src="../public/assets/download-badge/apple-badge.svg"
+                  src="/assets/download-badge/apple-badge.svg"
                   alt="download app button"
                   className={styles.appleBtn}
                 />
@@ -76,7 +76,7 @@ function Footer() {
             <li>
               <a href="https://play.google.com/store/games?hl=en&gl=US&pli=1">
                 <img
-                  src="../public/assets/download-badge/google-badge.png"
+                  src="/assets/download-badge/google-badge.png"
                   alt="download app button"
                   className={styles.googleBtn}
                 />

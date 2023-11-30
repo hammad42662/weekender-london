@@ -5,17 +5,17 @@ const categories = [
   {
     id: 11,
     names: "Men Bags",
-    path: "../public/images/men-bag.jpg",
+    path: "/images/men-bag.jpg",
   },
   {
     id: 22,
     names: "Women Bags",
-    path: "../public/images/women-bag.jpg",
+    path: "/images/women-bag.jpg",
   },
   {
     id: 33,
     names: "Accessories",
-    path: "../public/images/accessory.jpg",
+    path: "/images/accessory.jpg",
   },
 ];
 const getCategoryLink = (categoryId) => {

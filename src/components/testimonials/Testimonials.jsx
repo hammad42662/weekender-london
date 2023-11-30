@@ -8,7 +8,7 @@ import { BiSolidQuoteLeft } from "react-icons/bi";
 import { IoMdStar } from "react-icons/io";
 const reviewer = [
   {
-    image: "../public/images/avatar/avatar1.jpg",
+    image: "/images/avatar/avatar1.jpg",
     name: "Alice Johnson",
     review:
       "I was impressed with the wide selection of bags available on this website. I was able to find the perfect bag for my needs and the price was very reasonable. The shipping was also fast and free.",
@@ -16,7 +16,7 @@ const reviewer = [
     rating: 5,
   },
   {
-    image: "../public/images/avatar/avatar2.jpg",
+    image: "/images/avatar/avatar2.jpg",
     name: "Olivia Smith",
     review:
       "I've ordered several bags from this website and I've always been happy with the quality of the products and the service. The website is easy to use and the shipping is always fast and free. I highly recommend this website to anyone looking for a new bag.",
@@ -24,7 +24,7 @@ const reviewer = [
     rating: 5,
   },
   {
-    image: "../public/images/avatar/avatar3.jpg",
+    image: "/images/avatar/avatar3.jpg",
     name: "Isabella Williams",
     review:
       "I was skeptical about ordering a bag online, but I was very impressed with this website. The ordering process was easy and the bag arrived quickly and well-packaged. The bag is of excellent quality and I'm very happy with my purchase.",
@@ -32,7 +32,7 @@ const reviewer = [
     rating: 5,
   },
   {
-    image: "../public/images/avatar/avatar4.jpg",
+    image: "/images/avatar/avatar4.jpg",
     name: "Noah Brown",
     review:
       "I recently ordered a new bag from this website and I'm very happy with it. The bag is well-made and the price was very reasonable. The shipping was also fast and free. I would definitely recommend this website to others.",
@@ -40,7 +40,7 @@ const reviewer = [
     rating: 5,
   },
   {
-    image: "../public/images/avatar/avatar5.jpg",
+    image: "/images/avatar/avatar5.jpg",
     name: "Liam Jones",
     review:
       "I'm a big fan of this online bag store. They have a great selection of bags and the prices are very reasonable. The shipping is also fast and free. I've ordered several bags from this website and I've been very happy with all of them. I highly recommend this website to anyone looking for a new bag.",
