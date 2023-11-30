@@ -6,4 +6,4 @@ status = 200
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "script-src 'self' 'https://js.stripe.com';"
+    Content-Security-Policy = "script-src 'self' 'https://js.stripe.com/v3';"
