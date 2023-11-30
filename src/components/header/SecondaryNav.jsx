@@ -5,17 +5,17 @@ function SecondaryNav() {
     <nav className={styles.secondaryNav}>
       <ul>
         <li>
-          <NavLink to="/menbags" as={NavLink} className={styles.listItems}>
+          <NavLink to="/menbags" className={styles.listItems}>
             Men's Bags
           </NavLink>
         </li>
         <li>
-          <NavLink to="/womenbags" as={NavLink} className={styles.listItems}>
+          <NavLink to="/womenbags" className={styles.listItems}>
             Women's Bags
           </NavLink>
         </li>
         <li>
-          <NavLink to="/accessories" as={NavLink} className={styles.listItems}>
+          <NavLink to="/accessories" className={styles.listItems}>
             Accessories
           </NavLink>
         </li>

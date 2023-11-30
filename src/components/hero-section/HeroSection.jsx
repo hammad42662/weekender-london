@@ -5,7 +5,6 @@ function HeroSection() {
   const navigate = useNavigate();
   function handleClick() {
     navigate("/menbags");
-    console.log("button clicked");
   }
   return (
     <main className={styles.hero}>

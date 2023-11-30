@@ -18,6 +18,16 @@ const categories = [
     path: "../public/images/accessory.jpg",
   },
 ];
+const getCategoryLink = (categoryId) => {
+  switch (categoryId) {
+    case 11:
+      return "/menbags";
+    case 22:
+      return "/womenbags";
+    default:
+      return "/accessories";
+  }
+};
 function Categories() {
   return (
     <section className={styles.categoryCon}>
@@ -28,15 +38,7 @@ function Categories() {
             <img src={category.path} alt="categories image" />
 
             <p>{category.names}</p>
-            <Link
-              to={
-                category.id === 11
-                  ? "/menbags"
-                  : category.id === 22
-                  ? "/womenbags"
-                  : "/accessories"
-              }
-            >
+            <Link to={getCategoryLink(category.id)}>
               <Button margin="10px 0px 0px 0px" color="#412234  ">
                 {category.id === 11
                   ? "Shop Men's Bags"
