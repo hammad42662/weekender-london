@@ -97,7 +97,7 @@ function Cart() {
 
           <div className={styles.closeButtonContainer}>
             <button className={styles.closeButton} onClick={handleToggleModal}>
-              &times; Minimize
+              &times;
             </button>
           </div>
         </div>
