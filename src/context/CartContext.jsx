@@ -1,7 +1,8 @@
 import { createContext, useState, useEffect } from "react";
 
 export const CartContext = createContext();
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(
     localStorage.getItem("cartItems")
@@ -23,6 +24,7 @@ export const CartProvider = ({ children }) => {
     } else {
       setCartItems([...cartItems, { ...item, quantity: 1 }]);
     }
+    return toast("Item added to cart ");
   };
 
   const removeFromCart = (item) => {
