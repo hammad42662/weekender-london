@@ -4,21 +4,6 @@ import { Link } from "react-router-dom";
 import { BiCart } from "react-icons/bi";
 import { CartContext } from "../../context/CartContext";
 
-// function reducer(state, action) {
-//   switch (action.type) {
-//     case "inc":
-//       return { ...state, count: state.count + 1 };
-//     case "dec":
-//       if (state.count <= 1) {
-//         return state;
-//       }
-//       return { ...state, count: state.count - 1 };
-
-//     default:
-//       throw new Error("Unknown action");
-//   }
-// }
-
 function Cart() {
   const {
     cartItems,
