@@ -3,12 +3,7 @@ import styles from "../shared-styles/ProductSharedStyles.module.css";
 import { CartContext } from "../../context/CartContext";
 
 function ProductListing({ products, onAddToCart }) {
-  const { cartItems, setCartItems } = useContext(CartContext);
-
-  const addToCart = (clickedProduct) => {
-    setCartItems([...cartItems, clickedProduct]);
-    onAddToCart(clickedProduct);
-  };
+  const { cartItems, addToCart } = useContext(CartContext);
 
   return (
     <>

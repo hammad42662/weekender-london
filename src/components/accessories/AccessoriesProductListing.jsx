@@ -1,12 +1,12 @@
 import AccessoriesHeading from "./AccessoriesHeading";
 import AccesoriesObj from "./AccessoriesObj";
-
+import { useContext, useState } from "react";
+import { CartContext } from "../../context/CartContext";
 import ProductListing from "../ReusableComponents/ProductListings";
-import { useState } from "react";
 
 function AccessoriesProductListing() {
   const [product, setProduct] = useState([...AccesoriesObj]);
-
+  const { addToCart } = useContext(CartContext);
   const handleAddToCart = (clickedProduct) => {
     console.log(
       `Product added to cart: ${clickedProduct.name} (Accesories category)`
@@ -16,7 +16,7 @@ function AccessoriesProductListing() {
   return (
     <>
       <AccessoriesHeading />
-      <ProductListing products={product} onAddToCart={handleAddToCart} />
+      <ProductListing products={product} onAddToCart={addToCart} />
     </>
   );
 }

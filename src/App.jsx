@@ -10,7 +10,6 @@ import WomenBags from "./pages/WomenBags";
 import Accessories from "./pages/Accessories";
 import PageNotFound from "./pages/PageNotFound";
 import Nav from "./components/header/Nav";
-import { CartProvider } from "./context/CartContext";
 import Footer from "./footer/Footer";
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,12 +24,10 @@ const router = createBrowserRouter(
 );
 function App() {
   return (
-    <CartProvider>
-      <div>
-        <RouterProvider router={router} />
-        <Footer />
-      </div>
-    </CartProvider>
+    <div>
+      <RouterProvider router={router} />
+      <Footer />
+    </div>
   );
 }
 export default App;
